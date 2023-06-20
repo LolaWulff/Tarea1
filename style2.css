@@ -1,0 +1,127 @@
+/*===============Propiedades Globales================*/
+
+/* Wulff Lola*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    font-size: 10ch;
+    color: rgb(192, 192, 85);font-family: 'Cherry Bomb One', cursive;
+}
+body{
+    background-image: url("img/Fondo2.jpg");
+    background-size: 120% auto;  
+    margin: 30px 90px;
+}
+.intro{
+    margin:20px 30px;
+    font-size: x-large;
+    color: beige;
+}
+.peliculas{
+    margin:30px 50px;
+    font-size: large;
+    color: beige;
+    
+}
+ol {
+    list-style-type:circle;
+}
+.image{
+    margin:20px;
+}
+.moviePoster{
+    display: flex;
+    justify-content: center;
+    
+}
+.reseña{
+    margin:20px;
+    color: beige;
+    background-color: rgba(25, 25, 111, 0.71);
+}
+p{
+    margin: 30px 20px;
+}
+footer{
+    display: flex;
+    justify-content: right;
+    font-style: normal;
+    font-size:larger;
+}
+
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px){
+    #intro, #equipo {
+        width:90% !important;
+        margin:auto;
+    }
+  
+    #local {
+        flex-wrap: wrap;
+        padding-top:30px;
+   }
+   .wrapper-local {
+    width:90%;
+    margin:auto;
+    padding-top:50px;    
+   }
+ 
+}
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+
+@media (max-width:768px) {
+
+    #intro, #equipo{
+        width:90% !important;
+        margin:auto;
+    }
+
+    
+    #img-equipo{
+        max-height:20rem !important;
+        width:90%;
+    }
+    .wrapper-local {
+        width:90%;
+        margin:auto;
+        padding-top:50px;    
+    }
+    #local {
+        flex-wrap: wrap;
+    }
+    .mapa img {
+        width:100%;
+        height:auto;
+    }
+    #bg-contactos{
+        top: -120px;
+    }
+
+
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width:100% !important;
+    }
+    #servicios-fila-1 {
+        width:100% !important;
+    }
+
+    .icono-wrap{
+        flex-wrap:wrap !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+}
